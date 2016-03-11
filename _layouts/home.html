@@ -1,0 +1,62 @@
+---
+layout: default
+hide_play_btn: true
+---
+
+{% include nav.html %}
+
+<div class="jumbotron center-display">
+  <div class="container">
+    {% if site.game_version > 0 %}
+      <a href="/game#v{{ site.game_version }}" class="btn btn-warning btn-lg">Play Version {{ site.game_version }}</a>
+      <a href="/blog" class="btn btn-link">or read the blog &raquo;</a>
+    {% else %}
+      <a href="/blog" class="btn btn-link btn-lg">read the blog &raquo;</a>
+    {% endif %}
+    
+  </div>
+</div>
+
+<div class="container-fluid bottomfix">
+  <footer class="text-center">
+    <p>
+      <small>
+        A
+        <a rel="license" href="//creativecommons.org/licenses/by/4.0/" target="_blank">
+          creative commons
+        </a>
+        ,
+        <a target="_blank" href="//en.wikipedia.org/wiki/Open_source">
+          open source
+        </a>
+        indie game
+        <a rel="author" href="//saricden.com/" target="_blank">
+          made with <i alt="love" class="fa fa-heart"></i> by Kirk M. // saricDen
+        </a>
+      </small>
+    </p>
+    {% if site.patreon %}
+    <a class="btn btn-clear btn-sm" target="_blank" href="{{ site.patreon }}">
+      <i class="fa fa-heart-o"></i>
+      Become a Patreon
+    </a>
+    {% endif %}
+  </footer>
+</div>
+
+<style>
+body {
+  color: #FFF;
+}
+.jumbotron {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 1)
+    ),
+    url({{ site.cover_art }});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+</style>

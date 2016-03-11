@@ -1,0 +1,143 @@
+footer {
+  padding: 15px 0;
+}
+
+.center-display {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+}
+.center-display .container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.top-pad {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.bottomfix {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-banner {
+  color: #FFF;
+  background-color: #111;
+}
+
+/* Bootstrap varients
+---------------------------------------- */
+.btn.btn-clear {
+  border: solid 1px;
+  border-radius: 3px;
+}
+
+.navbar {
+  z-index: 2;
+  transition: background-color 0.5s;
+}
+
+.navbar.open {
+  background-color: #000 !important;
+}
+
+.nav-toggle.off {
+  display: none;
+}
+
+.credits {
+  z-index: 1;
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  padding-top: 158.5px;
+  visibility: hidden;
+  opacity: 0;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.credits > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.credits.on {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-pills {
+    text-align: center;
+  }
+  .nav-pills li {
+    display: inline-block;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .navbar-toggle .icon-bar {
+    background-color: #23527c;
+  }
+
+  .navbar-header {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ul.nav.navbar-nav li {
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .collapse.in, .collapsing {
+    background-color: #000;
+  }
+
+  .collapse.in ul.nav.navbar-nav li {
+    opacity: 1;
+  }
+
+  .collapse.in ul.nav.navbar-nav li:nth-of-type(1) {
+    transition-delay: 0s;
+  }
+
+  .collapse.in ul.nav.navbar-nav li:nth-of-type(2) {
+    transition-delay: 0.1s;
+  }
+
+  .collapse.in ul.nav.navbar-nav li:nth-of-type(3) {
+    transition-delay: 0.2s;
+  }
+
+  .collapse.in ul.nav.navbar-nav li:nth-of-type(4) {
+    transition-delay: 0.3s;
+  }
+
+  nav .navbar-btn {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
