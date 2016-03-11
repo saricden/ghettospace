@@ -9,9 +9,9 @@ hide_play_btn: true
   <div class="container">
     {% if site.game_version > 0 %}
       <a href="/game#v{{ site.game_version }}" class="btn btn-warning btn-lg">Play Version {{ site.game_version }}</a>
-      <a href="{{ "/blog/" | prepend: site.baseurl }}" class="btn btn-link">or read the blog &raquo;</a>
+      <a href="{{ "blog/" | prepend: site.baseurl }}" class="btn btn-link">or read the blog &raquo;</a>
     {% else %}
-      <a href="{{ "/blog/" | prepend: site.baseurl }}" class="btn btn-link btn-lg">read the blog &raquo;</a>
+      <a href="{{ "blog/" | prepend: site.baseurl }}" class="btn btn-link btn-lg">read the blog &raquo;</a>
     {% endif %}
     
   </div>
