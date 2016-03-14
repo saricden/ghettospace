@@ -52,7 +52,7 @@ footer {
   display: none;
 }
 
-.credits {
+.play-game {
   z-index: 1;
   position: fixed;
   display: table;
@@ -66,19 +66,25 @@ footer {
   visibility: hidden;
   opacity: 0;
   color: #FFF;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   text-align: center;
   transition: opacity 0.5s, visibility 0.5s;
 }
 
-.credits > div {
+.play-game > div {
   display: table-cell;
   vertical-align: middle;
 }
 
-.credits.on {
+.play-game.on {
   opacity: 1;
   visibility: visible;
+}
+
+.play-game img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 991px) {
@@ -103,7 +109,7 @@ footer {
   ul.nav.navbar-nav li {
     display: block;
     float: left;
-    width: 25%;
+    width: 20%;
     text-align: center;
     font-size: 30px;
     opacity: 0;
@@ -134,10 +140,11 @@ footer {
     transition-delay: 0.3s;
   }
 
+  .collapse.in ul.nav.navbar-nav li:nth-of-type(5) {
+    transition-delay: 0.4s;
+  }
+
   nav .navbar-btn {
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    display: none;
   }
 }

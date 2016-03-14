@@ -16,7 +16,8 @@ patreon: https://www.patreon.com
 
 game_version: 0.1
 game_link: /v/0.1
-cover_art: http://www.this-is-cool.co.uk/wp-content/gallery/jaime-jones/jaime-jones-video-game-art.jpg
+cover_art: https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9bbb8a4b7e9b0107fdb0fe52d0dbcaff
+game_icon: https://33.media.tumblr.com/avatar_097115c9cd65_128.png
 
 # Build settings
 markdown: kramdown

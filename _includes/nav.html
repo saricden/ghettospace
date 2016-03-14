@@ -3,7 +3,7 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="/">
         <span class="nav-toggle">{{ site.title }}</span>
-        <span class="nav-toggle off">Follow me on...</span>
+        <span class="nav-toggle off">Follow the journey...</span>
       </a>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -18,38 +18,23 @@
         <li><a href="{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a></li>
         <li><a href="{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a></li>
         <li><a href="{{ site.tumblr_username }}"><i class="fa fa-tumblr"></i></a></li>
+        <li><a href=""><i class="fa fa-envelope"></i></a></li>
       </ul>
       {% if page.hide_play_btn != true %}
-        <a href="/game#v{{ site.game_version }}" class="btn btn-success navbar-btn navbar-right">Play Version {{ site.game_version }}</a>
+        <a href="/game#v{{ site.game_version }}" class="btn btn-success navbar-btn navbar-right">
+          Play Version {{ site.game_version }}
+        </a>
       {% endif %}
     </div>
   </div>
 </nav>
 
-<div class="credits">
+<div class="play-game">
   <div>
-    <strong>{{ site.title }}</strong>
-    <p>
-      <small>
-        A
-        <a rel="license" href="//creativecommons.org/licenses/by/4.0/" target="_blank">
-          creative commons
-        </a>
-        ,
-        <a target="_blank" href="//en.wikipedia.org/wiki/Open_source">
-          open source
-        </a>
-        indie game
-        <a rel="author" href="//saricden.com/" target="_blank">
-          made with <i alt="love" class="fa fa-heart"></i> by Kirk M. // saricDen
-        </a>
-      </small>
-    </p>
-    {% if site.patreon %}
-    <a class="btn btn-clear btn-sm" target="_blank" href="{{ site.patreon }}">
-      <i class="fa fa-heart-o"></i>
-      Become a Patreon
-    </a>
-    {% endif %}
+    <img src="{{ site.game_icon }}">
+    <br>
+    <a href="/game/v{{ site.game_version }}" class="btn btn-success btn-lg">Play Version {{ site.game_version }}</a>
+    <br>
+    <a href="" class="btn btn-link">Want to play offline?</a>
   </div>
 </div>

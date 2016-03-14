@@ -8,7 +8,7 @@ $('.nav-pills a').click(function (e) {
 $('.navbar-toggle').click(function (e) {
   $('.navbar').toggleClass('open');
   $('.nav-toggle').toggleClass('off');
-  $('.credits').toggleClass('on');
+  $('.play-game').toggleClass('on');
 });
 
 var navScroll = function() {
